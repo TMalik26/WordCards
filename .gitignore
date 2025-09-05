@@ -1,0 +1,11 @@
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+
+# Ignore system files (Windows)
+Thumbs.db
+.DS_Store
+
+# Ignore environment files (if using virtualenv)
+venv/
+.env
