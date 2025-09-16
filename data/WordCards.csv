@@ -1,6 +1,201 @@
 eng_word,ukr_word,topic
-dog,собака,Animals
-cat,кіт,Animals
-book,книга,Office
-pen,ручка,Office
-,,Kitchen
+interface,інтерфейс,Design
+layout,макет,Design
+prototype,прототип,Design
+wireframe,каркас,Design
+color scheme,кольорова схема,Design
+typography,типографія,Design
+branding,брендинг,Design
+mockup,макет,Design
+usability,зручність,Design
+animation,анімація,Design
+iconography,іконографія,Design
+grid,сітка,Design
+palette,палитра,Design
+contrast,контраст,Design
+aesthetics,естетика,Design
+visual,візуальний,Design
+illustration,ілюстрація,Design
+texture,текстура,Design
+perspective,перспектива,Design
+composition,композиція,Design
+meeting,нарада,Office
+agenda,порядок денний,Office
+printer,принтер,Office
+notebook,ноутбук,Office
+schedule,розклад,Office
+deadline,термін,Office
+conference,конференція,Office
+document,документ,Office
+email,електронна пошта,Office
+report,звіт,Office
+manager,менеджер,Office
+colleague,колега,Office
+workspace,робоче місце,Office
+task,завдання,Office
+memo,службова записка,Office
+contract,контракт,Office
+presentation,презентація,Office
+office supplies,канцелярія,Office
+break,перерва,Office
+calendar,календар,Office
+algorithm,алгоритм,IT
+network,мережа,IT
+database,база даних,IT
+server,сервер,IT
+protocol,протокол,IT
+firewall,брандмауер,IT
+encryption,шифрування,IT
+cloud,хмара,IT
+API,API,IT
+debug,налагодження,IT
+binary,двійковий,IT
+frontend,фронтенд,IT
+backend,бекенд,IT
+framework,фреймворк,IT
+script,скрипт,IT
+virtual,віртуальний,IT
+router,маршрутизатор,IT
+kernel,ядро,IT
+patch,патч,IT
+bandwidth,пропускна здатність,IT
+code review,перевірка коду,Development
+deployment,розгортання,Development
+bug fix,виправлення помилок,Development
+version control,контроль версій,Development
+repository,репозиторій,Development
+commit,коміт,Development
+branch,гілка,Development
+merge,злиття,Development
+refactor,рефакторинг,Development
+unit test,модульний тест,Development
+integration test,інтеграційний тест,Development
+debugging,налагодження,Development
+build,збірка,Development
+script,скрипт,Development
+release,реліз,Development
+feature,функція,Development
+patch,патч,Development
+rollback,відкат,Development
+sprint,спринт,Development
+documentation,документація,Development
+startup,стартап,Business
+investor,інвестор,Business
+revenue,дохід,Business
+profit,прибуток,Business
+market,ринок,Business
+strategy,стратегія,Business
+competition,конкуренція,Business
+brand,бренд,Business
+shareholder,акціонер,Business
+negotiation,переговори,Business
+partnership,партнерство,Business
+growth,зростання,Business
+customer,клієнт,Business
+risk,ризик,Business
+forecast,прогноз,Business
+management,управління,Business
+budget,бюджет,Business
+contract,контракт,Business
+expansion,розширення,Business
+valuation,оцінка,Business
+campaign,кампанія,Marketing
+audience,аудиторія,Marketing
+SEO,SEO,Marketing
+content,контент,Marketing
+engagement,залучення,Marketing
+analytics,аналітика,Marketing
+brand awareness,впізнаваність бренду,Marketing
+advertisement,реклама,Marketing
+promotion,промоакція,Marketing
+lead,лід,Marketing
+conversion,конверсія,Marketing
+influencer,інфлюенсер,Marketing
+targeting,таргетинг,Marketing
+social media,соціальні мережі,Marketing
+copywriting,копірайтинг,Marketing
+newsletter,розсилка,Marketing
+blog,блог,Marketing
+viral,вірусний,Marketing
+retention,утримання,Marketing
+engagement rate,рівень залучення,Marketing
+prospect,потенційний клієнт,Sales
+pipeline,воронка продажів,Sales
+quota,ліміт,Sales
+commission,комісія,Sales
+lead,лід,Sales
+cold call,холодний дзвінок,Sales
+negotiation,переговори,Sales
+contract,контракт,Sales
+proposal,пропозиція,Sales
+upsell,допродаж,Sales
+cross-sell,перехресний продаж,Sales
+closing,закриття,Sales
+target,ціль,Sales
+follow-up,супровід,Sales
+demo,демо,Sales
+referral,реферал,Sales
+forecast,прогноз,Sales
+customer,клієнт,Sales
+deal,угода,Sales
+retention,утримання,Sales
+recruitment,рекрутинг,HR
+interview,співбесіда,HR
+onboarding,введення в посаду,HR
+performance,продуктивність,HR
+feedback,зворотний зв'язок,HR
+salary,зарплата,HR
+benefits,пільги,HR
+contract,контракт,HR
+training,тренінг,HR
+promotion,підвищення,HR
+evaluation,оцінка,HR
+team,команда,HR
+culture,культура,HR
+employee,співробітник,HR
+vacancy,вакансія,HR
+mentor,ментор,HR
+policy,політика,HR
+resignation,звільнення,HR
+attendance,відвідуваність,HR
+conflict,конфлікт,HR
+budget,бюджет,Finance
+expense,витрата,Finance
+income,дохід,Finance
+investment,інвестиція,Finance
+tax,податок,Finance
+audit,аудит,Finance
+profit,прибуток,Finance
+loss,збиток,Finance
+account,рахунок,Finance
+balance,баланс,Finance
+forecast,прогноз,Finance
+capital,капітал,Finance
+dividend,дивіденд,Finance
+equity,капітал,Finance
+liability,зобов'язання,Finance
+revenue,дохід,Finance
+cash flow,грошовий потік,Finance
+loan,кредит,Finance
+interest,відсоток,Finance
+asset,актив,Finance
+roadmap,дорожня карта,Product Management
+feature,функція,Product Management
+backlog,беклог,Product Management
+sprint,спринт,Product Management
+release,реліз,Product Management
+priority,пріоритет,Product Management
+stakeholder,зацікавлена сторона,Product Management
+user story,історія користувача,Product Management
+wireframe,каркас,Product Management
+prototype,прототип,Product Management
+MVP,мінімально життєздатний продукт,Product Management
+iteration,ітерація,Product Management
+feedback,зворотний зв'язок,Product Management
+requirement,вимога,Product Management
+launch,запуск,Product Management
+epic,епік,Product Management
+risk,ризик,Product Management
+metrics,метрики,Product Management
+design,дизайн,Product Management
+validation,валідація,Product Management

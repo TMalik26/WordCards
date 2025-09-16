@@ -8,20 +8,17 @@ import csv
 #English to Ukranian
 def get_topics_English_to_Ukranian(file):
     """
-    Load flashcard topics from a CSV file for English -> Ukrainian practice.
+    The function gives a data for te cards of word to practice vocabulay
+    with transtaling words from English language to Ukanian.
 
-    Parameters:
-        file (str): Path to the CSV file containing flashcards with columns
-                    'topic', 'eng_word', 'ukr_word'.
+    The function tskes a CSV file which has three columns ("eng_word", 
+    "ukr_word" and "topic") and transforms it to a dictionary which
+    contains the topics as the keys and the dictionaries with the pairs
+    eng_word - ukr_word as the values.
 
-    Returns:
-        dict: Dictionary where keys are topic names and values are dictionaries
-              mapping English words to their Ukrainian translations.
-
-    Behavior:
-        - Reads the CSV file.
-        - Strips whitespace from topic names and words.
-        - Ignores rows with missing English or Ukrainian words.
+    Function behavior includes the reading CSV file, striping extra
+    whitespaces from topics names, English and Ukranian words and ignoring
+    the topics where is no words to practice yet.
     """
     topics = {}     # Create empty dictionary to store topics
 
@@ -34,33 +31,27 @@ def get_topics_English_to_Ukranian(file):
             eng_word = row["eng_word"].strip()
             ukr_word = row["ukr_word"].strip()
 
-            # If topic not already in topics dictionary, add it
-            if topic not in topics:
-                topics[topic] = {} # Initialize nested dictionary for word -> translation
-
-            # Add the English -> Ukrainian pair if both words exist
-            if eng_word and ukr_word:
-                topics[topic][eng_word] = ukr_word
+            # Only add if topic and both words are not empty
+            if topic and eng_word and ukr_word:
+                if topic not in topics: # If topic not already in topics dictionary, add it
+                    topics[topic] = {} # Initialize nested dictionary for word -> translation
+                topics[topic][eng_word] = ukr_word # Add the English -> Ukrainian pair 
 
     return topics
 
 
 def get_topics_Ukranian_to_English(file):
     """
-    Load flashcard topics from a CSV file for Ukrainian -> English practice.
+    The function gives a data for te cards of word to practice vocabulay
+    with transtaling words from Ukanian language to English.
 
-    Parameters:
-        file (str): Path to the CSV file containing flashcards with columns
-                    'topic', 'eng_word', 'ukr_word'.
-
-    Returns:
-        dict: Dictionary where keys are topic names and values are dictionaries
-              mapping Ukrainian words to their English translations.
-
-    Behavior:
-        - Reads the CSV file.
-        - Strips whitespace from topic names and words.
-        - Ignores rows with missing English or Ukrainian words.
+    The function is very similar to the get_topics_English_to_Ukranian() function.
+    It tskes and returns the same types of value, it has the same behavior.
+    
+    Only one difference is that this function create  ato to translate words
+    from Ukranian language to English. The the keys in the nested dictionaries
+    are the Ukranian words and the values are their translation on English.
+    
     """
     topics = {} # Create empty dictionary to store topics
 
@@ -73,12 +64,10 @@ def get_topics_Ukranian_to_English(file):
             eng_word = row["eng_word"].strip()
             ukr_word = row["ukr_word"].strip()
 
-            # If topic not already in topics dictionary, add it
-            if topic not in topics:
-                topics[topic] = {}              
-
-            # Initialize nested dictionary for word -> translation
-            if eng_word and ukr_word:
-                topics[topic][ukr_word] = eng_word
+            # Only add if topic and both words are not empty
+            if topic and eng_word and ukr_word:
+                if topic not in topics: # If topic not already in topics dictionary, add it
+                    topics[topic] = {} # Initialize nested dictionary for word -> translation
+                topics[topic][ukr_word] = eng_word # Add the Ukrainian -> English pair 
 
     return topics
